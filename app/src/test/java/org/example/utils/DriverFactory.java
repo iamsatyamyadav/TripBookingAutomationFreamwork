@@ -8,8 +8,6 @@ public class DriverFactory {
 
     public static WebDriver getDriver() {
         if (driver == null) {
-            // You can use WebDriverManager here if configured
-            System.setProperty("webdriver.chrome.driver", "path_to_chromedriver");
             driver = new ChromeDriver();
             driver.manage().window().maximize();
         }

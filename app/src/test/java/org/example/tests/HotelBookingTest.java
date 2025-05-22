@@ -15,7 +15,7 @@ public class HotelBookingTest {
     @BeforeClass
     public void setup() {
         driver = DriverFactory.getDriver();
-        driver.get("https://your-hotel-booking-site.com"); // Replace with actual URL
+        driver.get("https://TripBook.com"); 
         bookingPage = new HotelBookingPage(driver);
     }
 
@@ -29,7 +29,6 @@ public class HotelBookingTest {
 
         bookingPage.proceedToCheckout();
 
-        // NOTE: Do not complete payment per instructions
     }
 
     @AfterClass
